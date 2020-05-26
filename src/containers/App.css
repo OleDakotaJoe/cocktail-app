@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+}
+
+.recipeCard {
+  width: 300px;
+
+}
+
+body {
+  background: rgb(105,219,255);
+  background: linear-gradient(90deg, rgba(105,219,255,1) 21%, rgba(34,98,127,1) 69%, rgba(10,48,84,1) 90%);
+}
