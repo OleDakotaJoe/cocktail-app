@@ -3,11 +3,9 @@ import React from 'react';
 
 const Ingredients = (props) => {
 
-    let { recipeJSON } = props;
+    const { eachDrink } = props;
 
-    const obj = Object.entries(recipeJSON);
-    const drink = obj[0][1][0];
-    const mapDrink = Object.entries(drink)
+    const mapDrink = Object.entries(eachDrink)
     const ingredientList = mapDrink.map((value,i) => {
         if (i > 20 && i < 36 && (value[1] !== null) ){
                 let j=i+15;

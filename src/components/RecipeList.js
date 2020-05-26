@@ -9,7 +9,7 @@ const Recipelist = (prop) => {
     if ( obj.length > 0) {
         const entry = obj[0][1];
         if (entry !== null) {
-        const cardComponent = entry.map(value =>  <RecipeCard key={value.idDrink} id={value.idDrink} recipeName={value.strDrink} instructions={value.strInstructions} photoUrl={value.strDrinkThumb}  glass={value.strGlass} recipeJSON ={recipeJSON}/>)
+        const cardComponent = entry.map(value =>  <RecipeCard key={value.idDrink} id={value.idDrink} recipeName={value.strDrink} instructions={value.strInstructions} photoUrl={value.strDrinkThumb}  glass={value.strGlass} recipeJSON ={recipeJSON} eachDrink={value}/>)
             return(
         <React.StrictMode>
             {cardComponent}
